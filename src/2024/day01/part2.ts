@@ -6,5 +6,5 @@ export function solve(input: string): number {
     const left = lines.map(item => Number(item.trim().split('   ')[0])).sort();
     const right = lines.map(item => Number(item.trim().split('   ')[1])).sort();
 
-    
+    return 1;
 }
