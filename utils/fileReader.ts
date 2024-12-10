@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export function readInput(inputPath) {
+export function readInput(inputPath) : string | null {
   try {
     return fs.readFileSync(path.resolve(inputPath), 'utf8').trim();
   } catch (error) {
@@ -10,6 +10,6 @@ export function readInput(inputPath) {
   }
 }
 
-export function parseInputLines(input) {
+export function parseInputLines(input) : string[] {
   return input.split('\n');
 }

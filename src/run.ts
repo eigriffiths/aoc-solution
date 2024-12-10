@@ -8,7 +8,7 @@ async function runDay(year: string, day: string, part: string) {
       console.log(chalk.red("Please provide year, day, and part"));
       process.exit(1);
     }
-    
+
     const dayPath = path.resolve(
       process.cwd(), 
       `src/${year}/day${day.padStart(2, '0')}`
